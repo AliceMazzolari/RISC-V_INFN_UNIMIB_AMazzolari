@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Tue Oct  3 10:14:38 2023
+# Process ID: 8836
+# Current directory: /home/alis/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.runs/riscv_mem_reset_control_0_0_synth_1
+# Command line: vivado -log riscv_mem_reset_control_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source riscv_mem_reset_control_0_0.tcl
+# Log file: /home/alis/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.runs/riscv_mem_reset_control_0_0_synth_1/riscv_mem_reset_control_0_0.vds
+# Journal file: /home/alis/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.runs/riscv_mem_reset_control_0_0_synth_1/vivado.jou
+# Running On: alis-F15Plus-2, OS: Linux, CPU Frequency: 2487.875 MHz, CPU Physical cores: 4, Host memory: 8131 MB
+#-----------------------------------------------------------
+source riscv_mem_reset_control_0_0.tcl -notrace

@@ -1,0 +1,1 @@
+set_property -dict { PACKAGE_PIN N15   IOSTANDARD LVCMOS33 } [get_ports { convst_in_0  }]; #IO_L11P_T1_SRCC_14 Sch=ck_io[8]

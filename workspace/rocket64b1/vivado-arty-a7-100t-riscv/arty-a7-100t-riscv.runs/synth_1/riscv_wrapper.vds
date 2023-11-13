@@ -1,0 +1,599 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Wed Oct 25 19:52:32 2023
+# Process ID: 20516
+# Current directory: /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.runs/synth_1
+# Command line: vivado -log riscv_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source riscv_wrapper.tcl
+# Log file: /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.runs/synth_1/riscv_wrapper.vds
+# Journal file: /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.runs/synth_1/vivado.jou
+# Running On: alis-F15Plus-2, OS: Linux, CPU Frequency: 2487.278 MHz, CPU Physical cores: 4, Host memory: 8131 MB
+#-----------------------------------------------------------
+source riscv_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1297.797 ; gain = 44.023 ; free physical = 5159 ; free virtual = 21164
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2023.1/data/ip'.
+add_files: Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1390.586 ; gain = 92.789 ; free physical = 4976 ; free virtual = 21083
+Command: read_checkpoint -auto_incremental -incremental /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.srcs/utils_1/imports/synth_1/riscv_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.srcs/utils_1/imports/synth_1/riscv_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top riscv_wrapper -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 20645
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2123.164 ; gain = 370.766 ; free physical = 3950 ; free virtual = 20087
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'riscv_wrapper' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/hdl/riscv_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'riscv' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1451]
+INFO: [Synth 8-6157] synthesizing module 'DDR_imp_10J4PB3' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:13]
+INFO: [Synth 8-6157] synthesizing module 'riscv_axi_smc_1_0' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.runs/synth_1/.Xil/Vivado-20516-alis-F15Plus-2/realtime/riscv_axi_smc_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_axi_smc_1_0' (0#1) [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.runs/synth_1/.Xil/Vivado-20516-alis-F15Plus-2/realtime/riscv_axi_smc_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'riscv_mem_reset_control_0_0' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.runs/synth_1/.Xil/Vivado-20516-alis-F15Plus-2/realtime/riscv_mem_reset_control_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_mem_reset_control_0_0' (0#1) [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.runs/synth_1/.Xil/Vivado-20516-alis-F15Plus-2/realtime/riscv_mem_reset_control_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'riscv_mig_7series_0_0' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.runs/synth_1/.Xil/Vivado-20516-alis-F15Plus-2/realtime/riscv_mig_7series_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_mig_7series_0_0' (0#1) [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.runs/synth_1/.Xil/Vivado-20516-alis-F15Plus-2/realtime/riscv_mig_7series_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'app_sr_active' of module 'riscv_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:368]
+WARNING: [Synth 8-7071] port 'app_ref_ack' of module 'riscv_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:368]
+WARNING: [Synth 8-7071] port 'app_zq_ack' of module 'riscv_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:368]
+WARNING: [Synth 8-7071] port 's_axi_bid' of module 'riscv_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:368]
+WARNING: [Synth 8-7071] port 's_axi_rid' of module 'riscv_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:368]
+WARNING: [Synth 8-7071] port 'device_temp' of module 'riscv_mig_7series_0_0' is unconnected for instance 'mig_7series_0' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:368]
+WARNING: [Synth 8-7023] instance 'mig_7series_0' of module 'riscv_mig_7series_0_0' has 64 connections declared, but only 58 given [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:368]
+INFO: [Synth 8-6155] done synthesizing module 'DDR_imp_10J4PB3' (0#1) [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:13]
+INFO: [Synth 8-6157] synthesizing module 'IO_imp_44488Y' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:429]
+INFO: [Synth 8-6157] synthesizing module 'riscv_axi_gpio_0_0' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.runs/synth_1/.Xil/Vivado-20516-alis-F15Plus-2/realtime/riscv_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_axi_gpio_0_0' (0#1) [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.runs/synth_1/.Xil/Vivado-20516-alis-F15Plus-2/realtime/riscv_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'riscv_Ethernet_0' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.runs/synth_1/.Xil/Vivado-20516-alis-F15Plus-2/realtime/riscv_Ethernet_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_Ethernet_0' (0#1) [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.runs/synth_1/.Xil/Vivado-20516-alis-F15Plus-2/realtime/riscv_Ethernet_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'riscv_SD_0' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.runs/synth_1/.Xil/Vivado-20516-alis-F15Plus-2/realtime/riscv_SD_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_SD_0' (0#1) [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.runs/synth_1/.Xil/Vivado-20516-alis-F15Plus-2/realtime/riscv_SD_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'sdio_reset' of module 'riscv_SD_0' is unconnected for instance 'SD' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1053]
+WARNING: [Synth 8-7023] instance 'SD' of module 'riscv_SD_0' has 44 connections declared, but only 43 given [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1053]
+INFO: [Synth 8-6157] synthesizing module 'riscv_UART_0' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.runs/synth_1/.Xil/Vivado-20516-alis-F15Plus-2/realtime/riscv_UART_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_UART_0' (0#1) [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.runs/synth_1/.Xil/Vivado-20516-alis-F15Plus-2/realtime/riscv_UART_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'riscv_XADC_0' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.runs/synth_1/.Xil/Vivado-20516-alis-F15Plus-2/realtime/riscv_XADC_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_XADC_0' (0#1) [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.runs/synth_1/.Xil/Vivado-20516-alis-F15Plus-2/realtime/riscv_XADC_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'ip2intc_irpt' of module 'riscv_XADC_0' is unconnected for instance 'XADC' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1121]
+WARNING: [Synth 8-7071] port 'channel_out' of module 'riscv_XADC_0' is unconnected for instance 'XADC' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1121]
+WARNING: [Synth 8-7071] port 'busy_out' of module 'riscv_XADC_0' is unconnected for instance 'XADC' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1121]
+WARNING: [Synth 8-7071] port 'eoc_out' of module 'riscv_XADC_0' is unconnected for instance 'XADC' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1121]
+WARNING: [Synth 8-7071] port 'eos_out' of module 'riscv_XADC_0' is unconnected for instance 'XADC' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1121]
+WARNING: [Synth 8-7071] port 'ot_out' of module 'riscv_XADC_0' is unconnected for instance 'XADC' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1121]
+WARNING: [Synth 8-7071] port 'user_temp_alarm_out' of module 'riscv_XADC_0' is unconnected for instance 'XADC' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1121]
+WARNING: [Synth 8-7071] port 'alarm_out' of module 'riscv_XADC_0' is unconnected for instance 'XADC' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1121]
+WARNING: [Synth 8-7023] instance 'XADC' of module 'riscv_XADC_0' has 31 connections declared, but only 23 given [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1121]
+INFO: [Synth 8-6157] synthesizing module 'riscv_axi_timer_0_1' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.runs/synth_1/.Xil/Vivado-20516-alis-F15Plus-2/realtime/riscv_axi_timer_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_axi_timer_0_1' (0#1) [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.runs/synth_1/.Xil/Vivado-20516-alis-F15Plus-2/realtime/riscv_axi_timer_0_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'generateout0' of module 'riscv_axi_timer_0_1' is unconnected for instance 'axi_timer_0' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1145]
+WARNING: [Synth 8-7071] port 'generateout1' of module 'riscv_axi_timer_0_1' is unconnected for instance 'axi_timer_0' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1145]
+WARNING: [Synth 8-7071] port 'pwm0' of module 'riscv_axi_timer_0_1' is unconnected for instance 'axi_timer_0' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1145]
+WARNING: [Synth 8-7023] instance 'axi_timer_0' of module 'riscv_axi_timer_0_1' has 26 connections declared, but only 23 given [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1145]
+INFO: [Synth 8-6157] synthesizing module 'riscv_ethernet_stream_0_0' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.runs/synth_1/.Xil/Vivado-20516-alis-F15Plus-2/realtime/riscv_ethernet_stream_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_ethernet_stream_0_0' (0#1) [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.runs/synth_1/.Xil/Vivado-20516-alis-F15Plus-2/realtime/riscv_ethernet_stream_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'riscv_io_axi_m_0' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.runs/synth_1/.Xil/Vivado-20516-alis-F15Plus-2/realtime/riscv_io_axi_m_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_io_axi_m_0' (0#1) [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.runs/synth_1/.Xil/Vivado-20516-alis-F15Plus-2/realtime/riscv_io_axi_m_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'riscv_io_axi_s_0' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.runs/synth_1/.Xil/Vivado-20516-alis-F15Plus-2/realtime/riscv_io_axi_s_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_io_axi_s_0' (0#1) [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.runs/synth_1/.Xil/Vivado-20516-alis-F15Plus-2/realtime/riscv_io_axi_s_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'M00_AXI_awprot' of module 'riscv_io_axi_s_0' is unconnected for instance 'io_axi_s' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1297]
+WARNING: [Synth 8-7071] port 'M00_AXI_wstrb' of module 'riscv_io_axi_s_0' is unconnected for instance 'io_axi_s' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1297]
+WARNING: [Synth 8-7071] port 'M00_AXI_arprot' of module 'riscv_io_axi_s_0' is unconnected for instance 'io_axi_s' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1297]
+WARNING: [Synth 8-7071] port 'M01_AXI_awprot' of module 'riscv_io_axi_s_0' is unconnected for instance 'io_axi_s' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1297]
+WARNING: [Synth 8-7071] port 'M01_AXI_wstrb' of module 'riscv_io_axi_s_0' is unconnected for instance 'io_axi_s' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1297]
+WARNING: [Synth 8-7071] port 'M01_AXI_arprot' of module 'riscv_io_axi_s_0' is unconnected for instance 'io_axi_s' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1297]
+WARNING: [Synth 8-7071] port 'M02_AXI_awprot' of module 'riscv_io_axi_s_0' is unconnected for instance 'io_axi_s' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1297]
+WARNING: [Synth 8-7071] port 'M02_AXI_wstrb' of module 'riscv_io_axi_s_0' is unconnected for instance 'io_axi_s' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1297]
+WARNING: [Synth 8-7071] port 'M02_AXI_arprot' of module 'riscv_io_axi_s_0' is unconnected for instance 'io_axi_s' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1297]
+WARNING: [Synth 8-7071] port 'M03_AXI_awprot' of module 'riscv_io_axi_s_0' is unconnected for instance 'io_axi_s' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1297]
+WARNING: [Synth 8-7071] port 'M03_AXI_arprot' of module 'riscv_io_axi_s_0' is unconnected for instance 'io_axi_s' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1297]
+WARNING: [Synth 8-7071] port 'M04_AXI_awprot' of module 'riscv_io_axi_s_0' is unconnected for instance 'io_axi_s' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1297]
+WARNING: [Synth 8-7071] port 'M04_AXI_arprot' of module 'riscv_io_axi_s_0' is unconnected for instance 'io_axi_s' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1297]
+WARNING: [Synth 8-7071] port 'M05_AXI_awprot' of module 'riscv_io_axi_s_0' is unconnected for instance 'io_axi_s' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1297]
+WARNING: [Synth 8-7071] port 'M05_AXI_arprot' of module 'riscv_io_axi_s_0' is unconnected for instance 'io_axi_s' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1297]
+WARNING: [Synth 8-7023] instance 'io_axi_s' of module 'riscv_io_axi_s_0' has 154 connections declared, but only 139 given [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1297]
+INFO: [Synth 8-6157] synthesizing module 'riscv_xlconcat_0_0' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_xlconcat_0_0/synth/riscv_xlconcat_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (0#1) [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_xlconcat_0_0' (0#1) [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_xlconcat_0_0/synth/riscv_xlconcat_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'riscv_xlconstant_0_0' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_xlconstant_0_0/synth/riscv_xlconstant_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/b0f2/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (0#1) [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ipshared/b0f2/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_xlconstant_0_0' (0#1) [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_xlconstant_0_0/synth/riscv_xlconstant_0_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'IO_imp_44488Y' (0#1) [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:429]
+WARNING: [Synth 8-7071] port 'UART_rtsn' of module 'IO_imp_44488Y' is unconnected for instance 'IO' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1776]
+WARNING: [Synth 8-7023] instance 'IO' of module 'IO_imp_44488Y' has 97 connections declared, but only 96 given [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1776]
+INFO: [Synth 8-6157] synthesizing module 'riscv_RocketChip_0' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.runs/synth_1/.Xil/Vivado-20516-alis-F15Plus-2/realtime/riscv_RocketChip_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_RocketChip_0' (0#1) [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.runs/synth_1/.Xil/Vivado-20516-alis-F15Plus-2/realtime/riscv_RocketChip_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'dma_axi4_bid' of module 'riscv_RocketChip_0' is unconnected for instance 'RocketChip' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1873]
+WARNING: [Synth 8-7071] port 'dma_axi4_rid' of module 'riscv_RocketChip_0' is unconnected for instance 'RocketChip' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1873]
+WARNING: [Synth 8-7023] instance 'RocketChip' of module 'riscv_RocketChip_0' has 118 connections declared, but only 116 given [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1873]
+INFO: [Synth 8-6157] synthesizing module 'riscv_clk_wiz_0_0' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.runs/synth_1/.Xil/Vivado-20516-alis-F15Plus-2/realtime/riscv_clk_wiz_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_clk_wiz_0_0' (0#1) [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.runs/synth_1/.Xil/Vivado-20516-alis-F15Plus-2/realtime/riscv_clk_wiz_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'riscv_util_vector_logic_0_0' [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.runs/synth_1/.Xil/Vivado-20516-alis-F15Plus-2/realtime/riscv_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_util_vector_logic_0_0' (0#1) [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.runs/synth_1/.Xil/Vivado-20516-alis-F15Plus-2/realtime/riscv_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'riscv' (0#1) [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/synth/riscv.v:1451]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_wrapper' (0#1) [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/hdl/riscv_wrapper.v:13]
+WARNING: [Synth 8-7129] Port In8[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In9[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In10[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In11[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In12[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In13[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In14[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In15[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In16[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In17[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In18[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In19[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In20[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In21[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In22[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In23[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In24[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In25[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In26[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In27[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In28[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In29[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In30[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In31[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In32[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In33[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In34[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In35[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In36[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In37[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In38[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In39[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In40[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In41[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In42[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In43[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In44[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In45[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In46[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In47[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In48[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In49[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In50[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In51[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In52[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In53[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In54[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In55[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In56[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In57[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In58[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In59[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In60[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In61[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In62[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In63[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In64[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In65[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In66[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In67[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In68[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In69[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In70[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In71[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In72[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In73[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In74[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In75[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In76[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In77[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In78[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In79[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In80[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In81[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In82[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In83[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In84[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In85[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In86[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In87[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In88[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In89[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In90[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In91[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In92[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In93[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In94[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In95[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In96[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In97[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In98[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In99[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In100[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In101[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In102[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In103[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In104[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In105[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In106[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In107[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2208.070 ; gain = 455.672 ; free physical = 3848 ; free virtual = 19987
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2225.883 ; gain = 473.484 ; free physical = 3846 ; free virtual = 19986
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2225.883 ; gain = 473.484 ; free physical = 3846 ; free virtual = 19986
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2225.883 ; gain = 0.000 ; free physical = 3846 ; free virtual = 19986
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_axi_smc_1_0/riscv_axi_smc_1_0/riscv_axi_smc_1_0_in_context.xdc] for cell 'riscv_i/DDR/axi_smc_1'
+Finished Parsing XDC File [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_axi_smc_1_0/riscv_axi_smc_1_0/riscv_axi_smc_1_0_in_context.xdc] for cell 'riscv_i/DDR/axi_smc_1'
+Parsing XDC File [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mem_reset_control_0_0/riscv_mem_reset_control_0_0/riscv_mem_reset_control_0_0_in_context.xdc] for cell 'riscv_i/DDR/mem_reset_control_0'
+Finished Parsing XDC File [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mem_reset_control_0_0/riscv_mem_reset_control_0_0/riscv_mem_reset_control_0_0_in_context.xdc] for cell 'riscv_i/DDR/mem_reset_control_0'
+Parsing XDC File [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc] for cell 'riscv_i/DDR/mig_7series_0'
+Finished Parsing XDC File [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc] for cell 'riscv_i/DDR/mig_7series_0'
+Parsing XDC File [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_Ethernet_0/riscv_Ethernet_0/riscv_Ethernet_0_in_context.xdc] for cell 'riscv_i/IO/Ethernet'
+Finished Parsing XDC File [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_Ethernet_0/riscv_Ethernet_0/riscv_Ethernet_0_in_context.xdc] for cell 'riscv_i/IO/Ethernet'
+Parsing XDC File [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_SD_0/riscv_SD_0/riscv_SD_0_in_context.xdc] for cell 'riscv_i/IO/SD'
+Finished Parsing XDC File [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_SD_0/riscv_SD_0/riscv_SD_0_in_context.xdc] for cell 'riscv_i/IO/SD'
+Parsing XDC File [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_UART_0/riscv_UART_0/riscv_UART_0_in_context.xdc] for cell 'riscv_i/IO/UART'
+Finished Parsing XDC File [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_UART_0/riscv_UART_0/riscv_UART_0_in_context.xdc] for cell 'riscv_i/IO/UART'
+Parsing XDC File [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_XADC_0/riscv_XADC_0/riscv_XADC_0_in_context.xdc] for cell 'riscv_i/IO/XADC'
+Finished Parsing XDC File [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_XADC_0/riscv_XADC_0/riscv_XADC_0_in_context.xdc] for cell 'riscv_i/IO/XADC'
+Parsing XDC File [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_ethernet_stream_0_0/riscv_ethernet_stream_0_0/riscv_ethernet_stream_0_0_in_context.xdc] for cell 'riscv_i/IO/ethernet_stream_0'
+Finished Parsing XDC File [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_ethernet_stream_0_0/riscv_ethernet_stream_0_0/riscv_ethernet_stream_0_0_in_context.xdc] for cell 'riscv_i/IO/ethernet_stream_0'
+Parsing XDC File [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/riscv_io_axi_m_0/riscv_io_axi_m_0_in_context.xdc] for cell 'riscv_i/IO/io_axi_m'
+Finished Parsing XDC File [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_m_0/riscv_io_axi_m_0/riscv_io_axi_m_0_in_context.xdc] for cell 'riscv_i/IO/io_axi_m'
+Parsing XDC File [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/riscv_io_axi_s_0/riscv_io_axi_s_0_in_context.xdc] for cell 'riscv_i/IO/io_axi_s'
+Finished Parsing XDC File [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_io_axi_s_0/riscv_io_axi_s_0/riscv_io_axi_s_0_in_context.xdc] for cell 'riscv_i/IO/io_axi_s'
+Parsing XDC File [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_axi_gpio_0_0/riscv_axi_gpio_0_0/riscv_axi_gpio_0_0_in_context.xdc] for cell 'riscv_i/IO/AXI_GPIO_LED'
+Finished Parsing XDC File [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_axi_gpio_0_0/riscv_axi_gpio_0_0/riscv_axi_gpio_0_0_in_context.xdc] for cell 'riscv_i/IO/AXI_GPIO_LED'
+Parsing XDC File [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_axi_timer_0_1/riscv_axi_timer_0_1/riscv_axi_timer_0_0_in_context.xdc] for cell 'riscv_i/IO/axi_timer_0'
+Finished Parsing XDC File [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_axi_timer_0_1/riscv_axi_timer_0_1/riscv_axi_timer_0_0_in_context.xdc] for cell 'riscv_i/IO/axi_timer_0'
+Parsing XDC File [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_clk_wiz_0_0/riscv_clk_wiz_0_0/riscv_clk_wiz_0_0_in_context.xdc] for cell 'riscv_i/clk_wiz_0'
+Finished Parsing XDC File [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_clk_wiz_0_0/riscv_clk_wiz_0_0/riscv_clk_wiz_0_0_in_context.xdc] for cell 'riscv_i/clk_wiz_0'
+Parsing XDC File [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_util_vector_logic_0_0/riscv_util_vector_logic_0_0/riscv_util_vector_logic_0_0_in_context.xdc] for cell 'riscv_i/util_vector_logic_0'
+Finished Parsing XDC File [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_util_vector_logic_0_0/riscv_util_vector_logic_0_0/riscv_util_vector_logic_0_0_in_context.xdc] for cell 'riscv_i/util_vector_logic_0'
+Parsing XDC File [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_RocketChip_0/riscv_RocketChip_0/riscv_RocketChip_0_in_context.xdc] for cell 'riscv_i/RocketChip'
+Finished Parsing XDC File [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_RocketChip_0/riscv_RocketChip_0/riscv_RocketChip_0_in_context.xdc] for cell 'riscv_i/RocketChip'
+Parsing XDC File [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.srcs/constrs_1/imports/arty-a7-100t/gpio.xdc]
+WARNING: [Vivado 12-584] No ports matched 'led_0'. [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.srcs/constrs_1/imports/arty-a7-100t/gpio.xdc:2]
+WARNING: [Vivado 12-584] No ports matched 'led_1'. [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.srcs/constrs_1/imports/arty-a7-100t/gpio.xdc:3]
+WARNING: [Vivado 12-584] No ports matched 'led_2'. [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.srcs/constrs_1/imports/arty-a7-100t/gpio.xdc:4]
+WARNING: [Vivado 12-584] No ports matched 'led_3'. [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.srcs/constrs_1/imports/arty-a7-100t/gpio.xdc:5]
+Finished Parsing XDC File [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.srcs/constrs_1/imports/arty-a7-100t/gpio.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.srcs/constrs_1/imports/arty-a7-100t/gpio.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/riscv_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Parsing XDC File [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.srcs/constrs_1/new/xadc.xdc]
+Finished Parsing XDC File [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.srcs/constrs_1/new/xadc.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.srcs/constrs_1/new/xadc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/riscv_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/riscv_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2258.801 ; gain = 0.000 ; free physical = 3834 ; free virtual = 19976
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2258.801 ; gain = 0.000 ; free physical = 3834 ; free virtual = 19976
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2258.801 ; gain = 506.402 ; free physical = 3830 ; free virtual = 19971
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2258.801 ; gain = 506.402 ; free physical = 3830 ; free virtual = 19971
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_addr[0]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 2).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_addr[0]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 3).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_addr[10]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_addr[10]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_addr[11]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_addr[11]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 7).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_addr[12]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 8).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_addr[12]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 9).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_addr[13]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 10).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_addr[13]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 11).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_addr[1]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 12).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_addr[1]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 13).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_addr[2]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 14).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_addr[2]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 15).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_addr[3]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 16).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_addr[3]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 17).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_addr[4]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 18).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_addr[4]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 19).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_addr[5]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 20).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_addr[5]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 21).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_addr[6]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 22).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_addr[6]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 23).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_addr[7]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 24).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_addr[7]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 25).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_addr[8]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 26).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_addr[8]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 27).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_addr[9]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 28).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_addr[9]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 29).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_ba[0]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 30).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_ba[0]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 31).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_ba[1]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 32).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_ba[1]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 33).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_ba[2]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 34).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_ba[2]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 35).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_cas_n. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 36).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_cas_n. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 37).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_ck_n[0]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 38).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_ck_n[0]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 39).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_ck_p[0]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 40).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_ck_p[0]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 41).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_cke[0]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 42).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_cke[0]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 43).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_cs_n[0]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 44).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_cs_n[0]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 45).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dm[0]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 46).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dm[0]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 47).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dm[1]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 48).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dm[1]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 49).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dq[0]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 50).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dq[0]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 51).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dq[10]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 52).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dq[10]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 53).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dq[11]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 54).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dq[11]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 55).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dq[12]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 56).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dq[12]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 57).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dq[13]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 58).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dq[13]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 59).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dq[14]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 60).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dq[14]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 61).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dq[15]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 62).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dq[15]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 63).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dq[1]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 64).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dq[1]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 65).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dq[2]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 66).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dq[2]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 67).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dq[3]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 68).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dq[3]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 69).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dq[4]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 70).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dq[4]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 71).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dq[5]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 72).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dq[5]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 73).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dq[6]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 74).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dq[6]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 75).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dq[7]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 76).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dq[7]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 77).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dq[8]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 78).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dq[8]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 79).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dq[9]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 80).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dq[9]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 81).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dqs_n[0]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 82).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dqs_n[0]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 83).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dqs_n[1]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 84).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dqs_n[1]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 85).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dqs_p[0]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 86).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dqs_p[0]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 87).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_dqs_p[1]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 88).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_dqs_p[1]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 89).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_odt[0]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 90).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_odt[0]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 91).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_ras_n. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 92).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_ras_n. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 93).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_reset_n. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 94).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_reset_n. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 95).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_sdram_we_n. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 96).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_sdram_we_n. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_mig_7series_0_0/riscv_mig_7series_0_0/riscv_mig_7series_0_0_in_context.xdc, line 97).
+Applied set_property IO_BUFFER_TYPE = NONE for eth_mdio_data. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_Ethernet_0/riscv_Ethernet_0/riscv_Ethernet_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for eth_mdio_data. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_Ethernet_0/riscv_Ethernet_0/riscv_Ethernet_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for sdio_cmd. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_SD_0/riscv_SD_0/riscv_SD_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sdio_cmd. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_SD_0/riscv_SD_0/riscv_SD_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for sdio_dat[0]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_SD_0/riscv_SD_0/riscv_SD_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sdio_dat[0]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_SD_0/riscv_SD_0/riscv_SD_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for sdio_dat[1]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_SD_0/riscv_SD_0/riscv_SD_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sdio_dat[1]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_SD_0/riscv_SD_0/riscv_SD_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for sdio_dat[2]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_SD_0/riscv_SD_0/riscv_SD_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sdio_dat[2]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_SD_0/riscv_SD_0/riscv_SD_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for sdio_dat[3]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_SD_0/riscv_SD_0/riscv_SD_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sdio_dat[3]. (constraint file  /home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_SD_0/riscv_SD_0/riscv_SD_0_in_context.xdc, line 10).
+Applied set_property KEEP_HIERARCHY = SOFT for riscv_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for riscv_i/DDR/axi_smc_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for riscv_i/DDR/mem_reset_control_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for riscv_i/DDR/mig_7series_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for riscv_i/IO/Ethernet. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for riscv_i/IO/SD. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for riscv_i/IO/UART. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for riscv_i/IO/XADC. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for riscv_i/IO/ethernet_stream_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for riscv_i/IO/io_axi_m. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for riscv_i/IO/io_axi_s. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for riscv_i/IO/xlconcat_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for riscv_i/IO/xlconstant_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for riscv_i/IO/AXI_GPIO_LED. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for riscv_i/IO/axi_timer_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for riscv_i/clk_wiz_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for riscv_i/util_vector_logic_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for riscv_i/RocketChip. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2258.801 ; gain = 506.402 ; free physical = 3830 ; free virtual = 19971
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2258.801 ; gain = 506.402 ; free physical = 3828 ; free virtual = 19971
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 2258.801 ; gain = 506.402 ; free physical = 3825 ; free virtual = 19973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 2258.801 ; gain = 506.402 ; free physical = 3818 ; free virtual = 19976
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 2258.801 ; gain = 506.402 ; free physical = 3818 ; free virtual = 19976
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 2258.801 ; gain = 506.402 ; free physical = 3818 ; free virtual = 19973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 2258.801 ; gain = 506.402 ; free physical = 3818 ; free virtual = 19974
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 2258.801 ; gain = 506.402 ; free physical = 3818 ; free virtual = 19974
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 2258.801 ; gain = 506.402 ; free physical = 3818 ; free virtual = 19974
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 2258.801 ; gain = 506.402 ; free physical = 3818 ; free virtual = 19974
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 2258.801 ; gain = 506.402 ; free physical = 3818 ; free virtual = 19974
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 2258.801 ; gain = 506.402 ; free physical = 3818 ; free virtual = 19974
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------------------+----------+
+|      |BlackBox name               |Instances |
++------+----------------------------+----------+
+|1     |riscv_RocketChip_0          |         1|
+|2     |riscv_clk_wiz_0_0           |         1|
+|3     |riscv_util_vector_logic_0_0 |         1|
+|4     |riscv_axi_smc_1_0           |         1|
+|5     |riscv_mem_reset_control_0_0 |         1|
+|6     |riscv_mig_7series_0_0       |         1|
+|7     |riscv_axi_gpio_0_0          |         1|
+|8     |riscv_Ethernet_0            |         1|
+|9     |riscv_SD_0                  |         1|
+|10    |riscv_UART_0                |         1|
+|11    |riscv_XADC_0                |         1|
+|12    |riscv_axi_timer_0_1         |         1|
+|13    |riscv_ethernet_stream_0_0   |         1|
+|14    |riscv_io_axi_m_0            |         1|
+|15    |riscv_io_axi_s_0            |         1|
++------+----------------------------+----------+
+
+Report Cell Usage: 
++------+--------------------------+------+
+|      |Cell                      |Count |
++------+--------------------------+------+
+|1     |riscv_Ethernet            |     1|
+|2     |riscv_RocketChip          |     1|
+|3     |riscv_SD                  |     1|
+|4     |riscv_UART                |     1|
+|5     |riscv_XADC                |     1|
+|6     |riscv_axi_gpio_0          |     1|
+|7     |riscv_axi_smc_1           |     1|
+|8     |riscv_axi_timer_0         |     1|
+|9     |riscv_clk_wiz_0           |     1|
+|10    |riscv_ethernet_stream_0   |     1|
+|11    |riscv_io_axi_m            |     1|
+|12    |riscv_io_axi_s            |     1|
+|13    |riscv_mem_reset_control_0 |     1|
+|14    |riscv_mig_7series_0       |     1|
+|15    |riscv_util_vector_logic_0 |     1|
+|16    |IBUF                      |    15|
+|17    |OBUF                      |    14|
++------+--------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 2258.801 ; gain = 506.402 ; free physical = 3818 ; free virtual = 19974
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 2258.801 ; gain = 473.484 ; free physical = 3818 ; free virtual = 19973
+Synthesis Optimization Complete : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 2258.809 ; gain = 506.402 ; free physical = 3818 ; free virtual = 19973
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2258.809 ; gain = 0.000 ; free physical = 4092 ; free virtual = 20247
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2258.809 ; gain = 0.000 ; free physical = 4091 ; free virtual = 20246
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: ed8c6c7f
+INFO: [Common 17-83] Releasing license: Synthesis
+69 Infos, 149 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:59 ; elapsed = 00:00:55 . Memory (MB): peak = 2258.809 ; gain = 844.418 ; free physical = 4091 ; free virtual = 20246
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2021.549; main = 1750.159; forked = 404.779
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3232.035; main = 2258.805; forked = 973.230
+INFO: [Common 17-1381] The checkpoint '/home/alis/gpio/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.runs/synth_1/riscv_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file riscv_wrapper_utilization_synth.rpt -pb riscv_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 25 19:54:32 2023...

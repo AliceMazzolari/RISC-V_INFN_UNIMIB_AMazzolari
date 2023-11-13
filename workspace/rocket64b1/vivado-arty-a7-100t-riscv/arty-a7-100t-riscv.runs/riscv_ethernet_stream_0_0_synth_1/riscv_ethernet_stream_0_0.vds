@@ -1,0 +1,537 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Tue Oct  3 10:29:09 2023
+# Process ID: 9685
+# Current directory: /home/alis/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.runs/riscv_ethernet_stream_0_0_synth_1
+# Command line: vivado -log riscv_ethernet_stream_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source riscv_ethernet_stream_0_0.tcl
+# Log file: /home/alis/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.runs/riscv_ethernet_stream_0_0_synth_1/riscv_ethernet_stream_0_0.vds
+# Journal file: /home/alis/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.runs/riscv_ethernet_stream_0_0_synth_1/vivado.jou
+# Running On: alis-F15Plus-2, OS: Linux, CPU Frequency: 2582.526 MHz, CPU Physical cores: 4, Host memory: 8131 MB
+#-----------------------------------------------------------
+INFO: [Common 17-1239] XILINX_LOCAL_USER_DATA is set to 'no'.
+source riscv_ethernet_stream_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1329.723 ; gain = 0.023 ; free physical = 1991 ; free virtual = 5724
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2023.1/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: riscv_ethernet_stream_0_0
+Command: synth_design -top riscv_ethernet_stream_0_0 -part xc7a100tcsg324-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 1 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 9692
+WARNING: [Synth 8-11065] parameter 'S_KEEP_WIDTH_INT' becomes localparam in 'axis_adapter' with formal parameter declaration list [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/lib/axis/rtl/axis_adapter.v:93]
+WARNING: [Synth 8-11065] parameter 'M_KEEP_WIDTH_INT' becomes localparam in 'axis_adapter' with formal parameter declaration list [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/lib/axis/rtl/axis_adapter.v:94]
+WARNING: [Synth 8-11065] parameter 'S_DATA_WORD_SIZE' becomes localparam in 'axis_adapter' with formal parameter declaration list [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/lib/axis/rtl/axis_adapter.v:97]
+WARNING: [Synth 8-11065] parameter 'M_DATA_WORD_SIZE' becomes localparam in 'axis_adapter' with formal parameter declaration list [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/lib/axis/rtl/axis_adapter.v:98]
+WARNING: [Synth 8-11065] parameter 'EXPAND_BUS' becomes localparam in 'axis_adapter' with formal parameter declaration list [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/lib/axis/rtl/axis_adapter.v:100]
+WARNING: [Synth 8-11065] parameter 'DATA_WIDTH' becomes localparam in 'axis_adapter' with formal parameter declaration list [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/lib/axis/rtl/axis_adapter.v:102]
+WARNING: [Synth 8-11065] parameter 'KEEP_WIDTH' becomes localparam in 'axis_adapter' with formal parameter declaration list [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/lib/axis/rtl/axis_adapter.v:103]
+WARNING: [Synth 8-11065] parameter 'SEGMENT_COUNT' becomes localparam in 'axis_adapter' with formal parameter declaration list [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/lib/axis/rtl/axis_adapter.v:105]
+WARNING: [Synth 8-11065] parameter 'SEGMENT_COUNT_WIDTH' becomes localparam in 'axis_adapter' with formal parameter declaration list [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/lib/axis/rtl/axis_adapter.v:106]
+WARNING: [Synth 8-11065] parameter 'SEGMENT_DATA_WIDTH' becomes localparam in 'axis_adapter' with formal parameter declaration list [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/lib/axis/rtl/axis_adapter.v:108]
+WARNING: [Synth 8-11065] parameter 'SEGMENT_KEEP_WIDTH' becomes localparam in 'axis_adapter' with formal parameter declaration list [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/lib/axis/rtl/axis_adapter.v:109]
+WARNING: [Synth 8-11065] parameter 'ADDR_WIDTH' becomes localparam in 'axis_async_fifo' with formal parameter declaration list [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/lib/axis/rtl/axis_async_fifo.v:125]
+WARNING: [Synth 8-11065] parameter 'OUTPUT_FIFO_ADDR_WIDTH' becomes localparam in 'axis_async_fifo' with formal parameter declaration list [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/lib/axis/rtl/axis_async_fifo.v:127]
+WARNING: [Synth 8-11065] parameter 'S_KEEP_WIDTH_INT' becomes localparam in 'axis_async_fifo_adapter' with formal parameter declaration list [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/lib/axis/rtl/axis_async_fifo_adapter.v:131]
+WARNING: [Synth 8-11065] parameter 'M_KEEP_WIDTH_INT' becomes localparam in 'axis_async_fifo_adapter' with formal parameter declaration list [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/lib/axis/rtl/axis_async_fifo_adapter.v:132]
+WARNING: [Synth 8-11065] parameter 'S_DATA_WORD_SIZE' becomes localparam in 'axis_async_fifo_adapter' with formal parameter declaration list [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/lib/axis/rtl/axis_async_fifo_adapter.v:135]
+WARNING: [Synth 8-11065] parameter 'M_DATA_WORD_SIZE' becomes localparam in 'axis_async_fifo_adapter' with formal parameter declaration list [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/lib/axis/rtl/axis_async_fifo_adapter.v:136]
+WARNING: [Synth 8-11065] parameter 'EXPAND_BUS' becomes localparam in 'axis_async_fifo_adapter' with formal parameter declaration list [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/lib/axis/rtl/axis_async_fifo_adapter.v:138]
+WARNING: [Synth 8-11065] parameter 'DATA_WIDTH' becomes localparam in 'axis_async_fifo_adapter' with formal parameter declaration list [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/lib/axis/rtl/axis_async_fifo_adapter.v:140]
+WARNING: [Synth 8-11065] parameter 'KEEP_WIDTH' becomes localparam in 'axis_async_fifo_adapter' with formal parameter declaration list [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/lib/axis/rtl/axis_async_fifo_adapter.v:141]
+WARNING: [Synth 8-11065] parameter 'MIN_LEN_WIDTH' becomes localparam in 'axis_gmii_tx' with formal parameter declaration list [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/rtl/axis_gmii_tx.v:91]
+WARNING: [Synth 8-11065] parameter 'STYLE_INT' becomes localparam in 'lfsr' with formal parameter declaration list [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/rtl/lfsr.v:368]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2046.531 ; gain = 378.770 ; free physical = 1045 ; free virtual = 4778
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'riscv_ethernet_stream_0_0' [/home/alis/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_ethernet_stream_0_0/synth/riscv_ethernet_stream_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'ethernet_arty_a7_100t' [/home/alis/vivado-risc-v/board/arty-a7-100t/ethernet-arty-a7-100t.v:1]
+INFO: [Synth 8-6157] synthesizing module 'eth_mac_mii_fifo' [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/rtl/eth_mac_mii_fifo.v:34]
+INFO: [Synth 8-6157] synthesizing module 'eth_mac_mii' [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/rtl/eth_mac_mii.v:34]
+INFO: [Synth 8-6157] synthesizing module 'mii_phy_if' [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/rtl/mii_phy_if.v:34]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:1519]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:1519]
+INFO: [Synth 8-6157] synthesizing module 'ssio_sdr_in' [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/rtl/ssio_sdr_in.v:34]
+INFO: [Synth 8-6157] synthesizing module 'BUFIO' [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:1791]
+INFO: [Synth 8-6155] done synthesizing module 'BUFIO' (0#1) [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:1791]
+INFO: [Synth 8-6157] synthesizing module 'BUFR' [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:1857]
+INFO: [Synth 8-6155] done synthesizing module 'BUFR' (0#1) [/tools/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:1857]
+INFO: [Synth 8-6155] done synthesizing module 'ssio_sdr_in' (0#1) [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/rtl/ssio_sdr_in.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'mii_phy_if' (0#1) [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/rtl/mii_phy_if.v:34]
+INFO: [Synth 8-6157] synthesizing module 'eth_mac_1g' [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/rtl/eth_mac_1g.v:34]
+INFO: [Synth 8-6157] synthesizing module 'axis_gmii_rx' [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/rtl/axis_gmii_rx.v:34]
+INFO: [Synth 8-6157] synthesizing module 'lfsr' [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/rtl/lfsr.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'lfsr' (0#1) [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/rtl/lfsr.v:34]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/rtl/axis_gmii_rx.v:186]
+INFO: [Synth 8-6155] done synthesizing module 'axis_gmii_rx' (0#1) [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/rtl/axis_gmii_rx.v:34]
+INFO: [Synth 8-6157] synthesizing module 'axis_gmii_tx' [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/rtl/axis_gmii_tx.v:34]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/rtl/axis_gmii_tx.v:345]
+INFO: [Synth 8-6155] done synthesizing module 'axis_gmii_tx' (0#1) [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/rtl/axis_gmii_tx.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'eth_mac_1g' (0#1) [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/rtl/eth_mac_1g.v:34]
+WARNING: [Synth 8-689] width (4) of port connection 'gmii_txd' does not match port width (8) of module 'eth_mac_1g' [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/rtl/eth_mac_mii.v:153]
+WARNING: [Synth 8-7071] port 'tx_ptp_ts' of module 'eth_mac_1g' is unconnected for instance 'eth_mac_1g_inst' [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/rtl/eth_mac_mii.v:136]
+WARNING: [Synth 8-7071] port 'rx_ptp_ts' of module 'eth_mac_1g' is unconnected for instance 'eth_mac_1g_inst' [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/rtl/eth_mac_mii.v:136]
+WARNING: [Synth 8-7071] port 'tx_axis_ptp_ts' of module 'eth_mac_1g' is unconnected for instance 'eth_mac_1g_inst' [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/rtl/eth_mac_mii.v:136]
+WARNING: [Synth 8-7071] port 'tx_axis_ptp_ts_tag' of module 'eth_mac_1g' is unconnected for instance 'eth_mac_1g_inst' [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/rtl/eth_mac_mii.v:136]
+WARNING: [Synth 8-7071] port 'tx_axis_ptp_ts_valid' of module 'eth_mac_1g' is unconnected for instance 'eth_mac_1g_inst' [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/rtl/eth_mac_mii.v:136]
+WARNING: [Synth 8-7023] instance 'eth_mac_1g_inst' of module 'eth_mac_1g' has 34 connections declared, but only 29 given [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/rtl/eth_mac_mii.v:136]
+INFO: [Synth 8-6155] done synthesizing module 'eth_mac_mii' (0#1) [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/rtl/eth_mac_mii.v:34]
+WARNING: [Synth 8-7071] port 'tx_start_packet' of module 'eth_mac_mii' is unconnected for instance 'eth_mac_1g_mii_inst' [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/rtl/eth_mac_mii_fifo.v:200]
+WARNING: [Synth 8-7071] port 'rx_start_packet' of module 'eth_mac_mii' is unconnected for instance 'eth_mac_1g_mii_inst' [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/rtl/eth_mac_mii_fifo.v:200]
+WARNING: [Synth 8-7023] instance 'eth_mac_1g_mii_inst' of module 'eth_mac_mii' has 28 connections declared, but only 26 given [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/rtl/eth_mac_mii_fifo.v:200]
+INFO: [Synth 8-6157] synthesizing module 'axis_async_fifo_adapter' [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/lib/axis/rtl/axis_async_fifo_adapter.v:34]
+INFO: [Synth 8-6157] synthesizing module 'axis_async_fifo' [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/lib/axis/rtl/axis_async_fifo.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'axis_async_fifo' (0#1) [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/lib/axis/rtl/axis_async_fifo.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'axis_async_fifo_adapter' (0#1) [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/lib/axis/rtl/axis_async_fifo_adapter.v:34]
+INFO: [Synth 8-6157] synthesizing module 'axis_async_fifo_adapter__parameterized0' [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/lib/axis/rtl/axis_async_fifo_adapter.v:34]
+INFO: [Synth 8-6157] synthesizing module 'axis_async_fifo__parameterized0' [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/lib/axis/rtl/axis_async_fifo.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'axis_async_fifo__parameterized0' (0#1) [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/lib/axis/rtl/axis_async_fifo.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'axis_async_fifo_adapter__parameterized0' (0#1) [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/lib/axis/rtl/axis_async_fifo_adapter.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'eth_mac_mii_fifo' (0#1) [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/rtl/eth_mac_mii_fifo.v:34]
+WARNING: [Synth 8-7071] port 'tx_error_underflow' of module 'eth_mac_mii_fifo' is unconnected for instance 'eth_mac_inst' [/home/alis/vivado-risc-v/board/arty-a7-100t/ethernet-arty-a7-100t.v:75]
+WARNING: [Synth 8-7023] instance 'eth_mac_inst' of module 'eth_mac_mii_fifo' has 33 connections declared, but only 32 given [/home/alis/vivado-risc-v/board/arty-a7-100t/ethernet-arty-a7-100t.v:75]
+INFO: [Synth 8-6155] done synthesizing module 'ethernet_arty_a7_100t' (0#1) [/home/alis/vivado-risc-v/board/arty-a7-100t/ethernet-arty-a7-100t.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_ethernet_stream_0_0' (0#1) [/home/alis/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.gen/sources_1/bd/riscv/ip/riscv_ethernet_stream_0_0/synth/riscv_ethernet_stream_0_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element ptp_ts_reg_reg was removed.  [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/rtl/axis_gmii_rx.v:249]
+WARNING: [Synth 8-6014] Unused sequential element m_axis_ptp_ts_reg_reg was removed.  [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/rtl/axis_gmii_tx.v:409]
+WARNING: [Synth 8-6014] Unused sequential element m_axis_ptp_ts_tag_reg_reg was removed.  [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/rtl/axis_gmii_tx.v:410]
+WARNING: [Synth 8-6014] Unused sequential element m_axis_ptp_ts_valid_reg_reg was removed.  [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/rtl/axis_gmii_tx.v:411]
+WARNING: [Synth 8-6014] Unused sequential element wr_ptr_temp_reg was removed.  [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/lib/axis/rtl/axis_async_fifo.v:373]
+WARNING: [Synth 8-6014] Unused sequential element send_frame_reg_reg was removed.  [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/lib/axis/rtl/axis_async_fifo.v:386]
+WARNING: [Synth 8-6014] Unused sequential element wr_ptr_gray_sync2_reg_reg was removed.  [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/lib/axis/rtl/axis_async_fifo.v:484]
+WARNING: [Synth 8-6014] Unused sequential element rd_ptr_temp_reg was removed.  [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/lib/axis/rtl/axis_async_fifo.v:565]
+WARNING: [Synth 8-6014] Unused sequential element wr_ptr_temp_reg was removed.  [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/lib/axis/rtl/axis_async_fifo.v:373]
+WARNING: [Synth 8-6014] Unused sequential element send_frame_reg_reg was removed.  [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/lib/axis/rtl/axis_async_fifo.v:386]
+WARNING: [Synth 8-6014] Unused sequential element wr_ptr_gray_sync2_reg_reg was removed.  [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/lib/axis/rtl/axis_async_fifo.v:484]
+WARNING: [Synth 8-6014] Unused sequential element rd_ptr_temp_reg was removed.  [/home/alis/vivado-risc-v/ethernet/verilog-ethernet/lib/axis/rtl/axis_async_fifo.v:565]
+WARNING: [Synth 8-7129] Port s_axis_tkeep[0] in module axis_async_fifo__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tid[7] in module axis_async_fifo__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tid[6] in module axis_async_fifo__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tid[5] in module axis_async_fifo__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tid[4] in module axis_async_fifo__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tid[3] in module axis_async_fifo__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tid[2] in module axis_async_fifo__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tid[1] in module axis_async_fifo__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tid[0] in module axis_async_fifo__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdest[7] in module axis_async_fifo__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdest[6] in module axis_async_fifo__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdest[5] in module axis_async_fifo__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdest[4] in module axis_async_fifo__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdest[3] in module axis_async_fifo__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdest[2] in module axis_async_fifo__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdest[1] in module axis_async_fifo__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdest[0] in module axis_async_fifo__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tkeep[0] in module axis_async_fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tid[7] in module axis_async_fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tid[6] in module axis_async_fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tid[5] in module axis_async_fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tid[4] in module axis_async_fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tid[3] in module axis_async_fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tid[2] in module axis_async_fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tid[1] in module axis_async_fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tid[0] in module axis_async_fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdest[7] in module axis_async_fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdest[6] in module axis_async_fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdest[5] in module axis_async_fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdest[4] in module axis_async_fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdest[3] in module axis_async_fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdest[2] in module axis_async_fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdest[1] in module axis_async_fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tdest[0] in module axis_async_fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[95] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[94] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[93] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[92] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[91] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[90] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[89] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[88] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[87] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[86] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[85] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[84] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[83] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[82] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[81] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[80] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[79] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[78] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[77] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[76] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[75] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[74] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[73] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[72] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[71] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[70] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[69] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[68] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[67] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[66] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[65] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[64] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[63] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[62] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[61] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[60] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[59] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[58] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[57] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[56] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[55] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[54] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[53] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[52] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[51] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[50] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[49] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[48] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[47] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[46] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[45] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[44] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[43] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[42] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[41] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[40] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[39] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[38] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[37] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[36] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[35] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[34] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[33] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[32] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[31] in module axis_gmii_tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptp_ts[30] in module axis_gmii_tx is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2137.469 ; gain = 469.707 ; free physical = 928 ; free virtual = 4662
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2155.281 ; gain = 487.520 ; free physical = 928 ; free virtual = 4662
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2155.281 ; gain = 487.520 ; free physical = 928 ; free virtual = 4662
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2161.219 ; gain = 0.000 ; free physical = 924 ; free virtual = 4657
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2243.004 ; gain = 0.000 ; free physical = 916 ; free virtual = 4649
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2243.004 ; gain = 0.000 ; free physical = 915 ; free virtual = 4649
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 2243.004 ; gain = 575.242 ; free physical = 912 ; free virtual = 4646
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 2243.004 ; gain = 575.242 ; free physical = 912 ; free virtual = 4646
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 2243.004 ; gain = 575.242 ; free physical = 912 ; free virtual = 4646
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'axis_gmii_rx'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'axis_gmii_tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              STATE_IDLE |                              001 |                              000
+           STATE_PAYLOAD |                              010 |                              001
+         STATE_WAIT_LAST |                              100 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'one-hot' in module 'axis_gmii_rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              STATE_IDLE |                         00000001 |                              000
+          STATE_PREAMBLE |                         00000010 |                              001
+           STATE_PAYLOAD |                         00000100 |                              010
+              STATE_LAST |                         00001000 |                              011
+               STATE_PAD |                         00010000 |                              100
+               STATE_FCS |                         00100000 |                              101
+          STATE_WAIT_END |                         01000000 |                              110
+               STATE_IFG |                         10000000 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'one-hot' in module 'axis_gmii_tx'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 2243.004 ; gain = 575.242 ; free physical = 910 ; free virtual = 4645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   13 Bit       Adders := 4     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 1     
++---XORs : 
+	   2 Input     13 Bit         XORs := 10    
+	   2 Input      2 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 55    
+	   3 Input      1 Bit         XORs := 10    
+	   4 Input      1 Bit         XORs := 14    
+	   7 Input      1 Bit         XORs := 14    
+	   6 Input      1 Bit         XORs := 10    
+	   8 Input      1 Bit         XORs := 8     
+	   5 Input      1 Bit         XORs := 8     
+	   9 Input      1 Bit         XORs := 4     
+	  10 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               13 Bit    Registers := 16    
+	               10 Bit    Registers := 4     
+	                8 Bit    Registers := 9     
+	                6 Bit    Registers := 2     
+	                4 Bit    Registers := 4     
+	                2 Bit    Registers := 6     
+	                1 Bit    Registers := 96    
++---RAMs : 
+	              40K Bit	(4096 X 10 bit)          RAMs := 2     
++---Muxes : 
+	   2 Input   13 Bit        Muxes := 17    
+	   2 Input    8 Bit        Muxes := 21    
+	   3 Input    8 Bit        Muxes := 2     
+	   4 Input    8 Bit        Muxes := 1     
+	   8 Input    8 Bit        Muxes := 4     
+	   8 Input    6 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 4     
+	   2 Input    2 Bit        Muxes := 10    
+	   2 Input    1 Bit        Muxes := 86    
+	   3 Input    1 Bit        Muxes := 4     
+	   8 Input    1 Bit        Muxes := 12    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-3917] design riscv_ethernet_stream_0_0 has port rx_axis_tkeep[0] driven by constant 1
+INFO: [Synth 8-3917] design riscv_ethernet_stream_0_0 has port status_vector[15] driven by constant 0
+INFO: [Synth 8-3917] design riscv_ethernet_stream_0_0 has port status_vector[14] driven by constant 0
+INFO: [Synth 8-3917] design riscv_ethernet_stream_0_0 has port status_vector[13] driven by constant 0
+INFO: [Synth 8-3917] design riscv_ethernet_stream_0_0 has port status_vector[12] driven by constant 0
+INFO: [Synth 8-3917] design riscv_ethernet_stream_0_0 has port status_vector[11] driven by constant 0
+INFO: [Synth 8-3917] design riscv_ethernet_stream_0_0 has port status_vector[10] driven by constant 0
+INFO: [Synth 8-3917] design riscv_ethernet_stream_0_0 has port status_vector[9] driven by constant 0
+INFO: [Synth 8-3917] design riscv_ethernet_stream_0_0 has port status_vector[8] driven by constant 0
+INFO: [Synth 8-3917] design riscv_ethernet_stream_0_0 has port status_vector[7] driven by constant 0
+INFO: [Synth 8-3917] design riscv_ethernet_stream_0_0 has port status_vector[6] driven by constant 0
+INFO: [Synth 8-3917] design riscv_ethernet_stream_0_0 has port status_vector[5] driven by constant 0
+INFO: [Synth 8-3917] design riscv_ethernet_stream_0_0 has port status_vector[4] driven by constant 0
+INFO: [Synth 8-3917] design riscv_ethernet_stream_0_0 has port status_vector[3] driven by constant 0
+INFO: [Synth 8-3917] design riscv_ethernet_stream_0_0 has port status_vector[2] driven by constant 0
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 2243.004 ; gain = 575.242 ; free physical = 897 ; free virtual = 4632
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++--------------------------+---------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name               | RTL Object                                  | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------------------+---------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|riscv_ethernet_stream_0_0 | inst/eth_mac_inst/tx_fifo/fifo_inst/mem_reg | 4 K x 10(NO_CHANGE)    | W |   | 4 K x 10(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|riscv_ethernet_stream_0_0 | inst/eth_mac_inst/rx_fifo/fifo_inst/mem_reg | 4 K x 10(NO_CHANGE)    | W |   | 4 K x 10(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
++--------------------------+---------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 2243.004 ; gain = 575.242 ; free physical = 897 ; free virtual = 4632
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 2243.004 ; gain = 575.242 ; free physical = 897 ; free virtual = 4632
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++--------------------------+---------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name               | RTL Object                                  | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------------------+---------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|riscv_ethernet_stream_0_0 | inst/eth_mac_inst/tx_fifo/fifo_inst/mem_reg | 4 K x 10(NO_CHANGE)    | W |   | 4 K x 10(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|riscv_ethernet_stream_0_0 | inst/eth_mac_inst/rx_fifo/fifo_inst/mem_reg | 4 K x 10(NO_CHANGE)    | W |   | 4 K x 10(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
++--------------------------+---------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 2243.004 ; gain = 575.242 ; free physical = 897 ; free virtual = 4632
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4163] Replicating register \inst/eth_mac_inst/eth_mac_1g_mii_inst/mii_phy_if_inst/rx_ssio_sdr_inst/output_q_reg_reg[0]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \inst/eth_mac_inst/eth_mac_1g_mii_inst/mii_phy_if_inst/rx_ssio_sdr_inst/output_q_reg_reg[2]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \inst/eth_mac_inst/eth_mac_1g_mii_inst/mii_phy_if_inst/rx_ssio_sdr_inst/output_q_reg_reg[3]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \inst/eth_mac_inst/eth_mac_1g_mii_inst/mii_phy_if_inst/rx_ssio_sdr_inst/output_q_reg_reg[4]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \inst/eth_mac_inst/eth_mac_1g_mii_inst/mii_phy_if_inst/rx_ssio_sdr_inst/output_q_reg_reg[5]  to handle IOB=TRUE attribute
+INFO: [Synth 8-4163] Replicating register \inst/eth_mac_inst/eth_mac_1g_mii_inst/mii_phy_if_inst/rx_ssio_sdr_inst/output_q_reg_reg[1]  to handle IOB=TRUE attribute
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:59 ; elapsed = 00:01:00 . Memory (MB): peak = 2243.004 ; gain = 575.242 ; free physical = 862 ; free virtual = 4616
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:59 ; elapsed = 00:01:00 . Memory (MB): peak = 2243.004 ; gain = 575.242 ; free physical = 862 ; free virtual = 4616
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:59 ; elapsed = 00:01:00 . Memory (MB): peak = 2243.004 ; gain = 575.242 ; free physical = 862 ; free virtual = 4616
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:59 ; elapsed = 00:01:00 . Memory (MB): peak = 2243.004 ; gain = 575.242 ; free physical = 862 ; free virtual = 4616
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:59 ; elapsed = 00:01:00 . Memory (MB): peak = 2243.004 ; gain = 575.242 ; free physical = 862 ; free virtual = 4616
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:59 ; elapsed = 00:01:00 . Memory (MB): peak = 2243.004 ; gain = 575.242 ; free physical = 862 ; free virtual = 4616
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |BUFIO    |     1|
+|3     |BUFR     |     1|
+|4     |CARRY4   |    39|
+|5     |LUT1     |     6|
+|6     |LUT2     |    99|
+|7     |LUT3     |    41|
+|8     |LUT4     |    48|
+|9     |LUT5     |    89|
+|10    |LUT6     |   153|
+|11    |RAMB18E1 |     2|
+|12    |RAMB36E1 |     2|
+|13    |FDPE     |    11|
+|14    |FDRE     |   422|
+|15    |FDSE     |    78|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:59 ; elapsed = 00:01:00 . Memory (MB): peak = 2243.004 ; gain = 575.242 ; free physical = 862 ; free virtual = 4616
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 2243.004 ; gain = 487.520 ; free physical = 861 ; free virtual = 4615
+Synthesis Optimization Complete : Time (s): cpu = 00:00:59 ; elapsed = 00:01:01 . Memory (MB): peak = 2243.012 ; gain = 575.242 ; free physical = 861 ; free virtual = 4615
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2243.012 ; gain = 0.000 ; free physical = 861 ; free virtual = 4615
+INFO: [Netlist 29-17] Analyzing 44 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+WARNING: [Constraints 18-5572] Instance inst/eth_mac_inst/eth_mac_1g_mii_inst/mii_phy_if_inst/phy_mii_tx_en_reg_reg has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance inst/eth_mac_inst/eth_mac_1g_mii_inst/mii_phy_if_inst/phy_mii_txd_reg_reg[0] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance inst/eth_mac_inst/eth_mac_1g_mii_inst/mii_phy_if_inst/phy_mii_txd_reg_reg[1] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance inst/eth_mac_inst/eth_mac_1g_mii_inst/mii_phy_if_inst/phy_mii_txd_reg_reg[2] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance inst/eth_mac_inst/eth_mac_1g_mii_inst/mii_phy_if_inst/phy_mii_txd_reg_reg[3] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance inst/eth_mac_inst/eth_mac_1g_mii_inst/mii_phy_if_inst/rx_ssio_sdr_inst/output_q_reg_reg[0] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance inst/eth_mac_inst/eth_mac_1g_mii_inst/mii_phy_if_inst/rx_ssio_sdr_inst/output_q_reg_reg[1] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance inst/eth_mac_inst/eth_mac_1g_mii_inst/mii_phy_if_inst/rx_ssio_sdr_inst/output_q_reg_reg[2] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance inst/eth_mac_inst/eth_mac_1g_mii_inst/mii_phy_if_inst/rx_ssio_sdr_inst/output_q_reg_reg[3] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance inst/eth_mac_inst/eth_mac_1g_mii_inst/mii_phy_if_inst/rx_ssio_sdr_inst/output_q_reg_reg[4] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance inst/eth_mac_inst/eth_mac_1g_mii_inst/mii_phy_if_inst/rx_ssio_sdr_inst/output_q_reg_reg[5] has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2243.012 ; gain = 0.000 ; free physical = 1122 ; free virtual = 4877
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: fa4b253b
+INFO: [Common 17-83] Releasing license: Synthesis
+83 Infos, 158 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:12 ; elapsed = 00:01:08 . Memory (MB): peak = 2243.012 ; gain = 910.320 ; free physical = 1122 ; free virtual = 4876
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1831.721; main = 1519.705; forked = 359.593
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3212.266; main = 2243.008; forked = 969.258
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+INFO: [Common 17-1381] The checkpoint '/home/alis/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.runs/riscv_ethernet_stream_0_0_synth_1/riscv_ethernet_stream_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP riscv_ethernet_stream_0_0, cache-ID = 17c02d1ad2ad0426
+INFO: [Coretcl 2-1174] Renamed 14 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/alis/vivado-risc-v/workspace/rocket64b1/vivado-arty-a7-100t-riscv/arty-a7-100t-riscv.runs/riscv_ethernet_stream_0_0_synth_1/riscv_ethernet_stream_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file riscv_ethernet_stream_0_0_utilization_synth.rpt -pb riscv_ethernet_stream_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Oct  3 10:30:45 2023...
